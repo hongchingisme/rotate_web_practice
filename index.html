@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <div class="logo">
+            <h2>Sound</h2>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="find">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="sideImg">
+            <img src="img/headphone1.jpg" alt="" id="mainImg">
+        </div>
+        <div class="content">
+            <h2><b>3D</b>Audio</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam pariatur voluptate dolore voluptas, excepturi sint repudiandae ducimus.
+            </p>
+            <h3>$50.00<b>USD</b></h3>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="socialIcons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+        <div class="changeImg">
+
+            <div class="sideImg next-Image">
+                <img src="img/headphone1.jpg" alt="" id="mainImg">
+            </div>
+
+            <div class="sideImg next-Image">
+                <img src="img/headphone2.jpg" alt="" id="mainImg">
+            </div>
+
+            <div class="sideImg next-Image">
+                <img src="img/headphone3.jpg" alt="" id="mainImg">
+            </div>
+
+        </div>
+    </div>
+
+
+      <!-- js 寫法要google一下-->
+    <script>
+        let next_Image = document.querySelectorAll(".next-Image");
+        let mainImg = document.querySelector("#mainImg")
+
+            next_Image.forEach(sideImg =>{
+                sideImg.addEventListener("click" , ()=>{
+                    mainImg.src = sideImg.firstElementChild.src;
+                })
+            });
+
+            
+ 
+    </script>
+
+</section>
+
+    
+</body>
+</html>
